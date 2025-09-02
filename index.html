@@ -4,70 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Receitas</title>
-    <!-- Adiciona o Tailwind CSS para um estilo moderno e responsivo -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h3, h4 {
-            font-family: 'Playfair Display', serif;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800 p-4 sm:p-8">
+<body class="bg-gray-100 text-gray-800">
 
     <!-- Cabeçalho Principal do Site -->
-    <header class="text-center mb-12">
-        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-2">Livro de Receitas Digital</h1>
+    <header class="text-center my-8">
+        <h1 class="text-3xl font-bold text-gray-900">Livro de Receitas Digital</h1>
         <p class="text-lg text-gray-600">Receitas simples e deliciosas para todas as ocasiões.</p>
     </header>
 
     <!-- Seção de Receitas -->
-    <main class="flex justify-center">
-        
+    <main class="max-w-4xl mx-auto">
+
         <!-- Cartão da Receita: Patê de Frango -->
-        <div class="bg-gray-50 rounded-md shadow-md overflow-hidden max-w-3xl">
-            <div class="flex flex-col lg:flex-row p-6 gap-6">
+        <div class="bg-white rounded shadow-lg p-6 mb-8">
+            <div class="flex">
                 <!-- Seção de Texto da Receita -->
-                <div class="flex-1">
-                    <h3 class="text-3xl font-bold mb-2 text-orange-600">Patê de Frango</h3>
+                <div class="flex-1 mr-4">
+                    <h3 class="text-2xl font-bold text-orange-600">Patê de Frango</h3>
                     <p class="text-gray-700 mb-4">Um patê cremoso e versátil, ideal para sanduíches e canapés.</p>
-                    <div class="mb-4">
-                        <h4 class="text-xl font-semibold mb-2 text-gray-900">Ingredientes:</h4>
-                        <ul class="list-disc list-inside text-gray-700">
-                            <li>250g de peito de frango cozido e desfiado</li>
-                            <li>200g de requeijão cremoso</li>
-                            <li>1 cenoura pequena ralada</li>
-                            <li>1/2 lata de milho verde escorrido</li>
-                            <li>Cheiro-verde picado a gosto</li>
-                            <li>Sal e pimenta-do-reino a gosto</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold mb-2 text-gray-900">Modo de Preparo:</h4>
-                        <ol class="list-decimal list-inside text-gray-700">
-                            <li>Em uma tigela, misture o frango desfiado com o requeijão.</li>
-                            <li>Adicione a cenoura ralada, o milho e o cheiro-verde.</li>
-                            <li>Tempere com sal e pimenta a gosto.</li>
-                            <li>Misture bem até obter uma consistência homogênea.</li>
-                            <li>Sirva em fatias de pão ou torradas.</li>
-                        </ol>
-                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900">Ingredientes:</h4>
+                    <ul class="list-disc pl-6 text-gray-700">
+                        <li>250g de peito de frango cozido e desfiado</li>
+                        <li>200g de requeijão cremoso</li>
+                        <li>1 cenoura pequena ralada</li>
+                        <li>1/2 lata de milho verde escorrido</li>
+                        <li>Cheiro-verde picado a gosto</li>
+                        <li>Sal e pimenta-do-reino a gosto</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-900 mt-4">Modo de Preparo:</h4>
+                    <ol class="list-decimal pl-6 text-gray-700">
+                        <li>Em uma tigela, misture o frango desfiado com o requeijão.</li>
+                        <li>Adicione a cenoura ralada, o milho e o cheiro-verde.</li>
+                        <li>Tempere com sal e pimenta a gosto.</li>
+                        <li>Misture bem até obter uma consistência homogênea.</li>
+                        <li>Sirva em fatias de pão ou torradas.</li>
+                    </ol>
                 </div>
                 <!-- Seção do Vídeo -->
                 <div class="flex-1">
-                    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/DkLDMop3OqU?si=-GYFzspfbTqxKYpr" title="Receita de Patê de Frango" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full" height="315" src="https://www.youtube.com/embed/DkLDMop3OqU" title="Patê de Frango" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+
     </main>
 
     <!-- Rodapé -->
-    <footer class="text-center py-6 mt-12 bg-gray-200">
+    <footer class="text-center py-6 bg-gray-200">
         <p class="text-gray-600">© 2025 Livro de Receitas Digital - Todos os direitos reservados</p>
     </footer>
 
