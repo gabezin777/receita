@@ -1,207 +1,47 @@
+/* Reset básico para garantir consistência no layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #1a1a1a;
-            line-height: 1.6;
-            background-color: #EAECEF;
-            padding: 20px;
-        }
-
-        .descricao {
-            text-align: center;
-            margin-bottom: 2em;
-            font-family: 'Inter', sans-serif;
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-
-        .secao {
-            max-width: 1200px;
-            margin: 0 auto;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            border-radius: 9px;
-            display: flex;
-            background-color: #FFFFFF;
-            padding: 20px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        
-        .secao:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .texto {
-            flex: 1;
-            padding-right: 20px;
-            padding-left: 2em;
-            align-self: center;
-        }
-
-        .texto h2 {
-            line-height: 1.5em;
-            font-family: 'Inter', sans-serif;
-            margin-bottom: 0.5em;
-            text-align: center;
-            color: #1a1a1a;
-        }
-
-        .texto p {
-            line-height: 1.8em;
-            margin-bottom: 1em;
-            font-style: normal;
-        }
-
-        .imagem {
-            flex: 1;
-            text-align: center;
-            align-self: center;
-        }
-
-        .imagem img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 800px) {
-            .secao {
-                flex-direction: column;
-            }
-
-            .texto,
-            .imagem {
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="descricao">
-        <h1>Título da Seção Principal</h1>
-    </div>
-
-    <div class="secao">
-        <div class="texto">
-            <h2>Título do Texto</h2>
-            <p>
-                Este é um exemplo de texto formal. A tipografia e as cores foram alteradas para criar uma estética mais profissional e limpa, adequada para diversos tipos de conteúdo. O layout permanece o mesmo, mas a percepção visual é totalmente diferente.
-            </p>
-        </div>
-        <div class="imagem">
-            <img src="https://placehold.co/400x300/e5e7eb/6b7280?text=Imagem+Formal" alt="Uma imagem formal para o site">
-        </div>
-    </div>
-</body>
-</html>
-
-<<<<<<< HEAD
-=======
 body {
- font-family: Arial, Helvetica, sans-serif;color: #eedab1;
- line-height: 2.0;
- background-color: #000000;
- padding: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Cor de fundo clara */
+    color: #4b5563; /* Cor do texto principal */
+    padding: 1rem; /* Espaçamento interno */
 }
 
-
-
-
-.descricao {
- text-align: center;
- margin-bottom: 2em;
- font-family: "Metal Mania", system-ui;
+h1, h3, h4 {
+    font-family: 'Playfair Display', serif; /* Fonte com serifa para títulos */
 }
 
-
-
-
-
-
-
-
-.secao {
- justify-content
- max-width: 1200px;
- margin: 0 auto;
- box-shadow: 0 0 70px rgb(167, 14, 14);
- border-radius: 9px;
- display: flex;
- background-color: #1c0c0d;
- padding: 10px;
+header {
+    text-align: center;
+    margin-bottom: 3rem; /* Espaço abaixo do cabeçalho */
 }
 
-
-
-
-.texto {
- flex: 1;
- padding-right: 20px;
- padding-left: 2em;
- align-self: center;
+h1 {
+    font-size: 2.5rem; /* Tamanho de título maior */
+    font-weight: bold;
+    color: #1f2937; /* Cor escura para o título */
+    margin-bottom: 0.5rem;
 }
 
-
-
-
-.texto h2 {
- line-height: 2em;
- font-family: "Metal Mania", system-ui;
- margin-bottom: 1em;
- text-align: center;
+p {
+    font-size: 1.125rem; /* Tamanho de texto um pouco maior */
+    color: #6b7280; /* Cor de texto cinza para descrição */
 }
 
-
-
-
-.texto p {
- line-height: 2em;
- margin-bottom: 1.5em;
- font-style: italic;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-
-
-.imagem {
- width: 100px;
- flex: 1;
- text-align: center;
- align-self: center;
-}
-
-
-
-
-.imagem img {
- max-width: 400px;
- height: auto;
- border-radius: 8px;
-}
-
-
-
-
-@media (max-width: 800px) {
- .secao {
-    flex-direction: column;
- }
-
-
-
-
- .texto,
- .imagem {
-    padding: 10px;
- }
-}
-
-
-
->>>>>>> ceca7b87030abe1db82540219ccb2063669bede0
+.card-receita {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display
