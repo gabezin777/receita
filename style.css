@@ -1,4 +1,4 @@
-/* Reset básico para garantir consistência no layout */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,30 +7,29 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f3f4f6; /* Cor de fundo clara */
-    color: #4b5563; /* Cor do texto principal */
-    padding: 1rem; /* Espaçamento interno */
+    background-color: #f3f4f6; 
+    color: #4b5563; 
+    padding: 1rem; 
 }
 
 h1, h3, h4 {
-    font-family: 'Playfair Display', serif; /* Fonte com serifa para títulos */
-}
+    font-family: 'Playfair Display', serif; 
 
 header {
     text-align: center;
-    margin-bottom: 3rem; /* Espaço abaixo do cabeçalho */
+    margin-bottom: 3rem;
 }
 
 h1 {
-    font-size: 2.5rem; /* Tamanho de título maior */
+    font-size: 2.5rem; 
     font-weight: bold;
-    color: #1f2937; /* Cor escura para o título */
+    color: #1f2937; 
     margin-bottom: 0.5rem;
 }
 
 p {
-    font-size: 1.125rem; /* Tamanho de texto um pouco maior */
-    color: #6b7280; /* Cor de texto cinza para descrição */
+    font-size: 1.125rem; 
+    color: #6b7280; 
 }
 
 main {
@@ -41,7 +40,7 @@ main {
 .card-receita {
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     padding: 1.5rem;
     margin-bottom: 2rem;
     display
